@@ -1,0 +1,46 @@
+ErrorDocument 404 /
+
+# Перенаправлення з www на без www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+# Перенаправлення з HTTP на HTTPS (якщо ви використовуєте SSL)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Встановлює заголовки безпеки Content Security Policy (CSP) для захисту від XSS-атак
+# <IfModule mod_headers.c>
+#     Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; object-src 'none';"
+# </IfModule>
+
+# Заборона доступу до файлів з певними розширеннями
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|inc|bak|config|sql|dat|err)$">
+    Require all denied
+</FilesMatch>
+
+
+RewriteEngine On
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Redirect to index.html if the requested file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ / [L,R=301]
+
+
+AddCharset UTF-8 .html
+<FilesMatch "\.(html)$">
+    Header set Cache-Control: "no-cache, no-store"
+    Header unset ETag
+</FilesMatch>
+Header set X-Content-Type-Options nosniff
+# DISABLE CACHING
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>

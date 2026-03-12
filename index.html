@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Free Online Invoice Maker Tool | Free Invoice Generator Tool - MakerInvoice.Com</title>
+
+   <link rel="canonical" href="https://makerinvoice.com">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=7">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Create free, awesome and professional invoices using this invoice maker tool, In just one click of invoice generator&#39;s download button you can get it and send to your customers easily.">
+   <link rel="manifest" href="/manifest.json">
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="msapplication-starturl" content="/">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+   <link rel="stylesheet" href="/assets/css/bulma.min.css">
+   <link rel="stylesheet" href="/assets/css/datepicker.css">
+   <link rel="stylesheet" href="/assets/css/core.css">
+
+   <script src="/assets/js/jq.js"></script>
+   <script src="/assets/js/jq.valid.js"></script>
+   <script src="/assets/js/datepicker.js"></script>
+   <script type="text/javascript">
+      var site_url = '/';
+   </script>
+
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+   <script src="/assets/js/core.js"></script>
+
+   <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/icon-128x128.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/icon-64x64.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/icon-64x64.png">
+   <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/icon-64x64.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/icon-64x64.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/icon-128x128.png">
+   <link rel="icon" sizes="128x128" href="/assets/images/icons/icon-128x128.png">
+   <link rel="icon" sizes="192x192" href="/assets/images/icons/icon-192x192.png">
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-title" content="MakerInvoice.Com">
+   <meta name="application-name" content="MakerInvoice.Com">
+   <meta name="msapplication-TileColor" content="undefined">
+   <meta name="msapplication-square70x70logo" content="undefined">
+   <meta name="msapplication-square150x150logo" content="undefined">
+   <meta name="msapplication-wide310x150logo" content="undefined">
+   <meta name="msapplication-square310x310logo" content="undefined">
+</head>
+
+<body>
+   <div class="InvoiceMakerApp">
+      <!--Invoicemaker Header-->
+      <header class="invoiceMaker_Head">
+         <nav class="navbar has-shadow">
+            <div class="container">
+               <div class="navbar-brand">
+                  <a id="logo" class="navbar-item has-text-link" href="/">
+                     MakerInvoice.<span class="has-text-black">Com</span>
+                  </a>
+               </div>
+               <div class="navbar-end">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="button is-warning is-bold" href="javascript:void(0)" id="download_as_pdf">
+                        <span class="compose">Download As PDF</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!--End Invoicemaker Header-->
+
+      <section class="section">
+         <div class="container is-widescreen">
+            <div class="columns" id="mail-app">
+               <div class="column is-10 messages hero is-fullheight" id="message-feed">
+                  <div class="inv_maker_wrap">
+                     <div class="card">
+                        <header class="card-header notification_toggle">
+                           <h1 class="card-header-title">Free Invoice Maker / Generator Tool by APARTNER.PRO &nbsp;<span
+                                 class="tag is-warning">Best Rated</span></h1>
+
+                           <!-- This icon toggles additional information -->
+                           <!--<span class="card-header-icon notification_toggle" aria-label="more information">-->
+                           <span class="card-header-icon">
+                              <span class="icon">
+                                 <i class="fa fa-angle-down invoicemaker_arrow" aria-hidden="true">
+                                    <svg height="512pt" viewBox="0 0 512 512" width="512pt"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="m256 512c-68.378906 0-132.667969-26.628906-181.019531-74.980469-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531s26.628906-132.667969 74.980469-181.019531c48.351562-48.351563 112.640625-74.980469 181.019531-74.980469s132.667969 26.628906 181.019531 74.980469c48.351563 48.351562 74.980469 112.640625 74.980469 181.019531s-26.628906 132.667969-74.980469 181.019531c-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469zm0-472c-119.101562 0-216 96.898438-216 216s96.898438 216 216 216 216-96.898438 216-216-96.898438-216-216-216zm138.285156 182-28.285156-28.285156-110 110-110-110-28.285156 28.285156 138.285156 138.285156zm0 0">
+                                       </path>
+                                    </svg>
+                                 </i>
+                              </span>
+                           </span>
+                        </header>
+                        <div class="card-content" id="show_top_notification" style="display: none;">
+                           <div class="content">
+                              <div class="invoicemaker_main_content">
+                                 <h2>Welcome to Free Online Invoice Maker Tool by APARTNER.PRO</h2>
+                                 <p style="margin: 0;">Create professional invoices using our Free Invoice Maker Tool in
+                                    few simple steps. This tutorial guide will help all the new users who are getting
+                                    difficulty to use our tool. Before we get started let us know something about our
+                                    wonderful tool.</p>
+                                 <a href="#"
+                                    class="content_overlap_btn button content_overlap_btn button is-outlined is-success is-small">Know
+                                    More...</a>
+                              </div>
+                              <div class="invoicemaker_sub_content">
+                                 <h3>What does this Invoice Maker do and how?</h3>
+                                 <p>We have made this tool to help all the users around the world who want to create
+                                    professional invoices for their customers. You can use our Free Invoice Maker tool
+                                    to create a simple, attractive and professional invoice for any type of work. You
+                                    will just have to put few basis details on Invoice Generator like: Invoice From,
+                                    Invoice To, item details, item price, and quantity. There are some other advance
+                                    fields as well like Tax, Invoice Date, and Invoice Due Date. You can use these
+                                    fields as per your choice and if you don’t want to include any information just
+                                    leave that.</p>
+                                 <p>In this way, you will be able to create an awesome looking and professional invoice
+                                    and finally you can download it in .pdf format. Now you can share it with your
+                                    customers by email or any other way.</p>
+                                 <h3>Why should I use Invoice Generator?</h3>
+                                 <p>If you are selling any product or services, it is very important to create a proper
+                                    invoice for your sale/purchase. It will help you to keep a record of your every sale
+                                    and also gives an authentic prof for your sale. You can use it in your tax filling
+                                    details and also most of the customers are aware about proper invoice now days.</p>
+                                 <p>Now you have two ways; either use the old traditional way of billing which you use
+                                    your bill book and create bill to share with your customer or, use this modern way
+                                    for billing. Use this Free Online Invoice Generator tool to create professional
+                                    looking invoices for your customers and save time and Papers.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <form action="/" target="" name="invoice_builder" id="invoice_builder" class="invoice_builder"
+                        method="post" novalidate="novalidate">
+                        <div class="uppe_invoiceMakerSection card">
+                           <div class="columns has-shadow InvoiceMakerMainCol inv_mg_top_10">
+                              <div class="column is-8">
+                                 <div class="columns">
+                                    <div class="column is-6">
+                                       <div class="file has-name is-boxed has-text-left">
+                                          <label class="file-label" id="hide_top_notification">
+                                             <div class="logoInvoiceWrap"><img class="logoInvoice"
+                                                   alt="Here Will Come Your Company Logo"></div><span><span
+                                                   class="inv_mgt_10 is-width-100px is-rounded is-outlined is-center button is-danger is-small"
+                                                   id="logo_remove_btn">X Remove</span></span>
+                                          </label>
+                                          <label class="file-label has-text-center" id="show_top_notification">
+                                             <input type="hidden" name="logo" id="bash_logo" value=""><input
+                                                class="file-input" type="file" name="ilogo" value="">
+                                             <span class="file-cta">
+                                                <span class="file-icon">
+                                                   <i class="fa-big fa-upload">
+                                                      <svg height="412pt" viewBox="0 -12 412.28102 412" width="412pt"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                         <path
+                                                            d="m412.28125 218.324219c.003906-2.4375-.886719-4.792969-2.5-6.617188l-40.132812-87.980469c-8.8125-19.25-28.027344-31.605468-49.199219-31.632812h-25.558594c-5.519531 0-10 4.476562-10 10 0 5.519531 4.480469 10 10 10h25.558594c13.339843.019531 25.445312 7.804688 31 19.933594l34.796875 76.300781h-89.019532c-3.898437 0-7.445312 2.265625-9.078124 5.808594l-17.242188 37.351562c-5.585938 12.054688-17.652344 19.777344-30.9375 19.800781h-69.515625c-13.285156-.023437-25.347656-7.746093-30.9375-19.800781l-17.238281-37.351562c-1.636719-3.542969-5.179688-5.808594-9.082032-5.808594h-85.894531l42.15625-78.308594c5.933594-11.046875 17.460938-17.933593 30-17.925781h17.925781c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10h-17.921874c-19.902344-.015625-38.199219 10.917969-47.613282 28.445312l-48.746094 90.546876c-1.984374 1.882812-3.10546825 4.5-3.101562 7.238281 0 .175781 0 .347656.015625.523437-.01171875.171875-.015625.34375-.015625.515625v92.664063c.046875 42.015625 34.097656 76.066406 76.113281 76.113281h260.050781c42.019532-.046875 76.070313-34.097656 76.117188-76.113281v-92.664063c0-.171875 0-.34375-.015625-.515625.011719-.175781.015625-.347656.015625-.523437zm-20 93.699219c-.035156 30.976562-25.136719 56.082031-56.117188 56.117187h-260.050781c-30.976562-.035156-56.078125-25.136719-56.113281-56.113281v-83.703125h86.800781l14.558594 31.542969c8.871094 19.125 28.019531 31.378906 49.101563 31.417968h69.511718c21.082032-.039062 40.230469-12.292968 49.101563-31.417968l14.558593-31.542969h88.65625v83.699219zm0 0">
+                                                         </path>
+                                                         <path
+                                                            d="m151.371094 64.453125c2.285156 0 4.503906-.785156 6.28125-2.226563l38.488281-31.132812v128c0 5.523438 4.476563 10 10 10s10-4.476562 10-10v-127.789062l37.5625 30.871093c4.269531 3.507813 10.570313 2.890625 14.078125-1.375s2.890625-10.566406-1.375-14.074219l-53.917969-44.3125c-3.664062-3.011718-8.945312-3.035156-12.636719-.046874l-54.777343 44.308593c-3.292969 2.667969-4.550781 7.121094-3.136719 11.113281 1.414062 3.996094 5.195312 6.664063 9.433594 6.664063zm0 0">
+                                                         </path>
+                                                      </svg>
+                                                   </i>
+                                                </span>
+                                                <span class="file-label">Choose a file...</span>
+                                             </span>
+                                             <span class="file-name has-text-center is-center">Choose File</span>
+                                             <div class="inv_mkr_file_txt"><span class="is-block">Size:100px x 100px
+                                                </span><span class="is-block">Format: PNG, JPEG, JPG</span></div>
+                                          </label>
+                                       </div>
+                                    </div>
+                                    <div class="column is-6"></div>
+                                 </div>
+                                 <div class="columns">
+                                    <div class="column is-6">
+                                       <p class="ext-padd">Invoice From</p>
+                                       <textarea class="textarea" name="company_details"
+                                          placeholder="Your company name &amp; address" required="">
+Company Name: 12345678
+ID company: 12345678
+VAT number: 12345678
+Address: 12345678
+                                       </textarea>
+                                    </div>
+                                    <div class="column is-6">
+                                       <p class="ext-padd">Invoice To</p>
+                                       <textarea class="textarea" name="client_details" placeholder="Name, Address"
+                                          required="">
+Company Name: 12345678
+ID company: 12345678
+VAT number: 12345678
+Address: 12345678
+                                       </textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="column is-4">
+                                 <div class="form-cont">
+
+                                    <p class="has-text-right ext-padd">Company Name</p>
+                                    <div class="field clear">
+                                       <p class="control"><input class="input" type="text" name="company_name" placeholder="Company Name"></p>
+                                    </div>
+
+                                    <p class="has-text-right ext-padd">Billing Type</p>
+                                    <div class="field has-addons clear" style="justify-content:flex-end;">
+                                       <!--<p class="control"><span class="button is-static currency-addon-fixed">$</span></p>-->
+                                       <div class="control">
+                                          <div class="select">
+                                             <select class="is-static currency-selector" name="bill_type"
+                                                aria-label="Billing Type">
+                                                <option selected="" value="invoice">INVOICE</option>
+                                                <option value="estimate">ESTIMATE</option>
+                                                <option value="quote">QUOTE</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+
+
+                                    <p class="has-text-right ext-padd">Billing Currency</p>
+                                    <div class="field has-addons clear" style="justify-content:flex-end;">
+                                       <p class="control"><span class="button is-static currency-addon-fixed">$</span>
+                                       </p>
+                                       <div class="control">
+                                          <div class="select">
+                                             <select class="is-static currency-selector" name="bill_currency"
+                                                aria-label="Billing Currency">
+                                                <option data-symbol="$" selected="" value="$">USD</option>
+                                                <option data-symbol="€" value="€">EUR</option>
+                                                <option data-symbol="د.إ" value="د.إ">AED</option>
+                                                <option data-symbol="Af" value="Af">AFN</option>
+                                                <option data-symbol="Lek" value="Lek">ALL</option>
+                                                <option data-symbol="AMD" value="AMD">AMD</option>
+                                                <option data-symbol="ƒ" value="ƒ">ANG</option>
+                                                <option data-symbol="Kz" value="Kz">AOA</option>
+                                                <option data-symbol="$" value="$">ARS</option>
+                                                <option data-symbol="$" value="$">AUD</option>
+                                                <option data-symbol="ƒ" value="ƒ">AWG</option>
+                                                <option data-symbol="ман" value="ман">AZN</option>
+                                                <option data-symbol="KM" value="KM">BAM</option>
+                                                <option data-symbol="$" value="$">BBD</option>
+                                                <option data-symbol="৳" value="৳">BDT</option>
+                                                <option data-symbol="лв" value="лв">BGN</option>
+                                                <option data-symbol=".د.ب" value=".د.ب">BHD</option>
+                                                <option data-symbol="FBu" value="FBu">BIF</option>
+                                                <option data-symbol="$" value="$">BMD</option>
+                                                <option data-symbol="$" value="$">BND</option>
+                                                <option data-symbol="$b" value="$b">BOB</option>
+                                                <option data-symbol="R$" value="R$">BRL</option>
+                                                <option data-symbol="$" value="$">BSD</option>
+                                                <option data-symbol="Nu." value="Nu.">BTN</option>
+                                                <option data-symbol="P" value="P">BWP</option>
+                                                <option data-symbol="p." value="p.">BYR</option>
+                                                <option data-symbol="BZ$" value="BZ$">BZD</option>
+                                                <option data-symbol="$" value="$">CAD</option>
+                                                <option data-symbol="FC" value="FC">CDF</option>
+                                                <option data-symbol="CHF" value="CHF">CHF</option>
+                                                <option data-symbol="CLF" value="CLF">CLF</option>
+                                                <option data-symbol="$" value="$">CLP</option>
+                                                <option data-symbol="¥" value="¥">CNY</option>
+                                                <option data-symbol="$" value="$">COP</option>
+                                                <option data-symbol="₡" value="₡">CRC</option>
+                                                <option data-symbol="⃌" value="⃌">CUP</option>
+                                                <option data-symbol="$" value="$">CVE</option>
+                                                <option data-symbol="Kč" value="Kč">CZK</option>
+                                                <option data-symbol="Fdj" value="Fdj">DJF</option>
+                                                <option data-symbol="kr" value="kr">DKK</option>
+                                                <option data-symbol="RD$" value="RD$">DOP</option>
+                                                <option data-symbol="دج" value="دج">DZD</option>
+                                                <option data-symbol="£" value="£">EGP</option>
+                                                <option data-symbol="Br" value="Br">ETB</option>
+                                                <!--<option data-symbol="€" value="€">EUR</option>-->
+                                                <option data-symbol="$" value="$">FJD</option>
+                                                <option data-symbol="£" value="£">FKP</option>
+                                                <option data-symbol="£" value="£">GBP</option>
+                                                <option data-symbol="ლ" value="ლ">GEL</option>
+                                                <option data-symbol="¢" value="¢">GHS</option>
+                                                <option data-symbol="£" value="£">GIP</option>
+                                                <option data-symbol="D" value="D">GMD</option>
+                                                <option data-symbol="FG" value="FG">GNF</option>
+                                                <option data-symbol="Q" value="Q">GTQ</option>
+                                                <option data-symbol="$" value="$">GYD</option>
+                                                <option data-symbol="$" value="$">HKD</option>
+                                                <option data-symbol="L" value="L">HNL</option>
+                                                <option data-symbol="kn" value="kn">HRK</option>
+                                                <option data-symbol="G" value="G">HTG</option>
+                                                <option data-symbol="Ft" value="Ft">HUF</option>
+                                                <option data-symbol="Rp" value="Rp">IDR</option>
+                                                <option data-symbol="₪" value="₪">ILS</option>
+                                                <option data-symbol="₹" value="₹">INR</option>
+                                                <option data-symbol="ع.د" value="ع.د">IQD</option>
+                                                <option data-symbol="﷼" value="﷼">IRR</option>
+                                                <option data-symbol="kr" value="kr">ISK</option>
+                                                <option data-symbol="£" value="£">JEP</option>
+                                                <option data-symbol="J$" value="J$">JMD</option>
+                                                <option data-symbol="JD" value="JD">JOD</option>
+                                                <option data-symbol="¥" value="¥">JPY</option>
+                                                <option data-symbol="KSh" value="KSh">KES</option>
+                                                <option data-symbol="лв" value="лв">KGS</option>
+                                                <option data-symbol="៛" value="៛">KHR</option>
+                                                <option data-symbol="CF" value="CF">KMF</option>
+                                                <option data-symbol="₩" value="₩">KPW</option>
+                                                <option data-symbol="₩" value="₩">KRW</option>
+                                                <option data-symbol="د.ك" value="د.ك">KWD</option>
+                                                <option data-symbol="$" value="$">KYD</option>
+                                                <option data-symbol="лв" value="лв">KZT</option>
+                                                <option data-symbol="₭" value="₭">LAK</option>
+                                                <option data-symbol="£" value="£">LBP</option>
+                                                <option data-symbol="₨" value="₨">LKR</option>
+                                                <option data-symbol="$" value="$">LRD</option>
+                                                <option data-symbol="L" value="L">LSL</option>
+                                                <option data-symbol="Lt" value="Lt">LTL</option>
+                                                <option data-symbol="Ls" value="Ls">LVL</option>
+                                                <option data-symbol="ل.د" value="ل.د">LYD</option>
+                                                <option data-symbol="د.م." value="د.م.">MAD</option>
+                                                <option data-symbol="L" value="L">MDL</option>
+                                                <option data-symbol="Ar" value="Ar">MGA</option>
+                                                <option data-symbol="ден" value="ден">MKD</option>
+                                                <option data-symbol="K" value="K">MMK</option>
+                                                <option data-symbol="₮" value="₮">MNT</option>
+                                                <option data-symbol="MOP$" value="MOP$">MOP</option>
+                                                <option data-symbol="UM" value="UM">MRO</option>
+                                                <option data-symbol="₨" value="₨">MUR</option>
+                                                <option data-symbol=".ރ" value=".ރ">MVR</option>
+                                                <option data-symbol="MK" value="MK">MWK</option>
+                                                <option data-symbol="$" value="$">MXN</option>
+                                                <option data-symbol="RM" value="RM">MYR</option>
+                                                <option data-symbol="MT" value="MT">MZN</option>
+                                                <option data-symbol="$" value="$">NAD</option>
+                                                <option data-symbol="₦" value="₦">NGN</option>
+                                                <option data-symbol="C$" value="C$">NIO</option>
+                                                <option data-symbol="kr" value="kr">NOK</option>
+                                                <option data-symbol="₨" value="₨">NPR</option>
+                                                <option data-symbol="$" value="$">NZD</option>
+                                                <option data-symbol="﷼" value="﷼">OMR</option>
+                                                <option data-symbol="B/." value="B/.">PAB</option>
+                                                <option data-symbol="S/." value="S/.">PEN</option>
+                                                <option data-symbol="K" value="K">PGK</option>
+                                                <option data-symbol="₱" value="₱">PHP</option>
+                                                <option data-symbol="₨" value="₨">PKR</option>
+                                                <option data-symbol="zł" value="zł">PLN</option>
+                                                <option data-symbol="Gs" value="Gs">PYG</option>
+                                                <option data-symbol="﷼" value="﷼">QAR</option>
+                                                <option data-symbol="lei" value="lei">RON</option>
+                                                <option data-symbol="Дин." value="Дин.">RSD</option>
+                                                <!--<option data-symbol="руб" value="руб">RUB</option>-->
+                                                <option data-symbol="ر.س" value="ر.س">RWF</option>
+                                                <option data-symbol="﷼" value="﷼">SAR</option>
+                                                <option data-symbol="$" value="$">SBD</option>
+                                                <option data-symbol="₨" value="₨">SCR</option>
+                                                <option data-symbol="£" value="£">SDG</option>
+                                                <option data-symbol="kr" value="kr">SEK</option>
+                                                <option data-symbol="$" value="$">SGD</option>
+                                                <option data-symbol="£" value="£">SHP</option>
+                                                <option data-symbol="Le" value="Le">SLL</option>
+                                                <option data-symbol="S" value="S">SOS</option>
+                                                <option data-symbol="$" value="$">SRD</option>
+                                                <option data-symbol="Db" value="Db">STD</option>
+                                                <option data-symbol="$" value="$">SVC</option>
+                                                <option data-symbol="£" value="£">SYP</option>
+                                                <option data-symbol="L" value="L">SZL</option>
+                                                <option data-symbol="฿" value="฿">THB</option>
+                                                <option data-symbol="TJS" value="TJS">TJS</option>
+                                                <option data-symbol="m" value="m">TMT</option>
+                                                <option data-symbol="د.ت" value="د.ت">TND</option>
+                                                <option data-symbol="T$" value="T$">TOP</option>
+                                                <option data-symbol="₤" value="₤">TRY</option>
+                                                <option data-symbol="$" value="$">TTD</option>
+                                                <option data-symbol="NT$" value="NT$">TWD</option>
+                                                <option data-symbol="TZS" value="TZS">TZS</option>
+                                                <option data-symbol="₴" value="₴">UAH</option>
+                                                <option data-symbol="USh" value="USh">UGX</option>
+                                                <option data-symbol="$U" value="$U">UYU</option>
+                                                <option data-symbol="лв" value="лв">UZS</option>
+                                                <option data-symbol="Bs" value="Bs">VEF</option>
+                                                <option data-symbol="₫" value="₫">VND</option>
+                                                <option data-symbol="VT" value="VT">VUV</option>
+                                                <option data-symbol="WS$" value="WS$">WST</option>
+                                                <option data-symbol="FCFA" value="FCFA">XAF</option>
+                                                <option data-symbol="$" value="$">XCD</option>
+                                                <option data-symbol="XDR" value="XDR">XDR</option>
+                                                <option data-symbol="XOF" value="XOF">XOF</option>
+                                                <option data-symbol="F" value="F">XPF</option>
+                                                <option data-symbol="﷼" value="﷼">YER</option>
+                                                <option data-symbol="R" value="R">ZAR</option>
+                                                <option data-symbol="ZK" value="ZK">ZMK</option>
+                                                <option data-symbol="Z$" value="Z$">ZWL</option>
+                                                <option>With options</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <p class="has-text-right ext-padd">Invoice Number</p>
+                                    <div class="field has-addons clear">
+                                       <p class="control"><span class="button is-static">#</span></p>
+                                       <p class="control is-expanded"><input class="input" type="text"
+                                             name="invoice_number" placeholder="Invoice Number" value="656F798C83263">
+                                       </p>
+                                    </div>
+                                    <p class="has-text-right ext-padd">PAN Number</p>
+                                    <div class="field clear">
+                                       <p class="control"><input class="input" type="text" name="pan_number"
+                                             placeholder="PAN"></p>
+                                    </div>
+                                    <p class="has-text-right ext-padd">GST/TAX Number</p>
+                                    <div class="field clear">
+                                       <p class="control">
+                                          <input class="input" type="text" name="tax_number"
+                                             placeholder="GSTIN/Tax Number">
+                                       </p>
+                                    </div>
+                                    <p class="has-text-right ext-padd">Invoice Date</p>
+                                    <div class="field has-addons clear">
+                                       <div class="control is-expanded">
+                                          <div class="react-datepicker-wrapper">
+                                             <div class="react-datepicker__input-container">
+                                                <input type="text" name="invoice_date" class="input invoice_date"
+                                                   data-select="datepicker" value="05-18-2024" autocomplete="off"
+                                                   aria-label="Invoice Date">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <p class="control">
+                                          <span class="button is-static">
+                                             <i class="fa fa-black fa-calendar">
+                                                <svg height="480pt" viewBox="0 -8 480 480" width="480pt"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="m344 192c-75.109375 0-136 60.890625-136 136s60.890625 136 136 136 136-60.890625 136-136c-.082031-75.074219-60.925781-135.917969-136-136zm0 256c-66.273438 0-120-53.726562-120-120s53.726562-120 120-120 120 53.726562 120 120c-.074219 66.242188-53.757812 119.925781-120 120zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m352 305.472656v-49.472656h-16v49.472656c-6.777344 2.417969-12.109375 7.75-14.527344 14.527344h-33.472656v16h33.472656c3.699219 10.53125 14.1875 17.109375 25.28125 15.855469 11.09375-1.257813 19.84375-10.007813 21.101563-21.101563 1.253906-11.09375-5.324219-21.582031-15.855469-25.28125zm-8 30.527344c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8 8 3.582031 8 8-3.582031 8-8 8zm0 0">
+                                                   </path>
+                                                   <path d="m240 320h16v16h-16zm0 0"></path>
+                                                   <path d="m336 416h16v16h-16zm0 0"></path>
+                                                   <path d="m432 320h16v16h-16zm0 0"></path>
+                                                   <path d="m336 224h16v16h-16zm0 0"></path>
+                                                   <path
+                                                      d="m16 344v-232h368v72h16v-112c-.027344-22.082031-17.917969-39.972656-40-40h-56v-8c0-13.253906-10.746094-24-24-24s-24 10.746094-24 24v8h-112v-8c0-13.253906-10.746094-24-24-24s-24 10.746094-24 24v8h-56c-22.082031.027344-39.9726562 17.917969-40 40v272c.0273438 22.082031 17.917969 39.972656 40 40h160v-16h-160c-13.253906 0-24-10.746094-24-24zm256-320c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v32c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-160 0c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v32c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-72 24h56v8c0 13.253906 10.746094 24 24 24s24-10.746094 24-24v-8h112v8c0 13.253906 10.746094 24 24 24s24-10.746094 24-24v-8h56c13.253906 0 24 10.746094 24 24v24h-368v-24c0-13.253906 10.746094-24 24-24zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m112 176c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16zm-48 32v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m192 176c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16zm-48 32v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m272 200v-24c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h16v-16h-16v-32h32v24zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m96 256h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16v-32c0-8.835938-7.164062-16-16-16zm-32 48v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m176 256h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16v-32c0-8.835938-7.164062-16-16-16zm-32 48v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m352 184v-8c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v8h16v-8h32v8zm0 0">
+                                                   </path>
+                                                </svg>
+                                             </i>
+                                          </span>
+                                       </p>
+                                    </div>
+                                    <p class="has-text-right ext-padd">Due Date</p>
+                                    <div class="field has-addons clear">
+                                       <div class="control is-expanded">
+                                          <div class="react-datepicker-wrapper">
+                                             <div class="react-datepicker__input-container">
+                                                <input type="text" name="due_date" class="input due_date"
+                                                   data-select="datepicker" value="05-30-2024" autocomplete="off"
+                                                   aria-label="Due Date">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <p class="control">
+                                          <span class="button is-static">
+                                             <i class="fa fa-black fa-calendar">
+                                                <svg height="480pt" viewBox="0 -8 480 480" width="480pt"
+                                                   xmlns="http://www.w3.org/2000/svg">
+                                                   <path
+                                                      d="m344 192c-75.109375 0-136 60.890625-136 136s60.890625 136 136 136 136-60.890625 136-136c-.082031-75.074219-60.925781-135.917969-136-136zm0 256c-66.273438 0-120-53.726562-120-120s53.726562-120 120-120 120 53.726562 120 120c-.074219 66.242188-53.757812 119.925781-120 120zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m352 305.472656v-49.472656h-16v49.472656c-6.777344 2.417969-12.109375 7.75-14.527344 14.527344h-33.472656v16h33.472656c3.699219 10.53125 14.1875 17.109375 25.28125 15.855469 11.09375-1.257813 19.84375-10.007813 21.101563-21.101563 1.253906-11.09375-5.324219-21.582031-15.855469-25.28125zm-8 30.527344c-4.417969 0-8-3.582031-8-8s3.582031-8 8-8 8 3.582031 8 8-3.582031 8-8 8zm0 0">
+                                                   </path>
+                                                   <path d="m240 320h16v16h-16zm0 0"></path>
+                                                   <path d="m336 416h16v16h-16zm0 0"></path>
+                                                   <path d="m432 320h16v16h-16zm0 0"></path>
+                                                   <path d="m336 224h16v16h-16zm0 0"></path>
+                                                   <path
+                                                      d="m16 344v-232h368v72h16v-112c-.027344-22.082031-17.917969-39.972656-40-40h-56v-8c0-13.253906-10.746094-24-24-24s-24 10.746094-24 24v8h-112v-8c0-13.253906-10.746094-24-24-24s-24 10.746094-24 24v8h-56c-22.082031.027344-39.9726562 17.917969-40 40v272c.0273438 22.082031 17.917969 39.972656 40 40h160v-16h-160c-13.253906 0-24-10.746094-24-24zm256-320c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v32c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-160 0c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v32c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-72 24h56v8c0 13.253906 10.746094 24 24 24s24-10.746094 24-24v-8h112v8c0 13.253906 10.746094 24 24 24s24-10.746094 24-24v-8h56c13.253906 0 24 10.746094 24 24v24h-368v-24c0-13.253906 10.746094-24 24-24zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m112 176c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16zm-48 32v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m192 176c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16zm-48 32v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m272 200v-24c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h16v-16h-16v-32h32v24zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m96 256h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16v-32c0-8.835938-7.164062-16-16-16zm-32 48v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m176 256h-32c-8.835938 0-16 7.164062-16 16v32c0 8.835938 7.164062 16 16 16h32c8.835938 0 16-7.164062 16-16v-32c0-8.835938-7.164062-16-16-16zm-32 48v-32h32v32zm0 0">
+                                                   </path>
+                                                   <path
+                                                      d="m352 184v-8c0-8.835938-7.164062-16-16-16h-32c-8.835938 0-16 7.164062-16 16v8h16v-8h32v8zm0 0">
+                                                   </path>
+                                                </svg>
+                                             </i>
+                                          </span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="columns has-background-white">
+                              <div class="column is-full inv_pad_30">
+                                 <div class="product-det">
+                                    <div class="append_item_row">
+                                       <ul class="columns inv_mgb_0" id="item_row">
+                                          <li class="column is-6">
+                                             <p class="ext-padd">Item</p>
+                                             <input class="input name" type="text"
+                                                placeholder="Enter Product / Service Name" name="item[data][0]">
+                                          </li>
+                                          <li class="column is-2">
+                                             <p class="ext-padd">Rate/Price</p>
+                                             <input class="input price" type="number" placeholder="0.00"
+                                                name="item[data][1]">
+                                          </li>
+                                          <li class="column is-1">
+                                             <p class="ext-padd">Qty.</p>
+                                             <input class="input qty" type="number" placeholder="1" name="item[data][2]"
+                                                min="1" value="1">
+                                          </li>
+                                          <li class="column is-2">
+                                             <p class="ext-padd">Amount</p>
+                                             <input class="input amount" type="number" placeholder="0.00"
+                                                name="item[data][3]" readonly="">
+                                          </li>
+                                          <li class="column is-1"></li>
+                                       </ul>
+                                    </div>
+                                    <ul>
+                                       <li class="column is-full inv_p_0">
+                                          <button type="button" name="addnew" id="addnew_row"
+                                             class="button is-link is-outlined">+ Add Another Item</button>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="columns has-background-white inv_pad_15">
+                              <div class="column is-8"></div>
+                              <div class="column is-4">
+                                 <table class="to-table">
+                                    <tbody>
+                                       <tr>
+                                          <td>Subtotal</td>
+                                          <td class="is-pulled-right sub_total"><span class="sign-st">$</span> 00.00
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>GST/Tax</td>
+                                          <td>
+                                             <div class="field has-addons">
+                                                <p class="control is-expanded"><input class="input tax" type="text"
+                                                      placeholder="0" name="tax_amount"></p>
+                                                <p class="control"><span class="button is-static">%</span></p>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>Discount</td>
+                                          <td>
+                                             <div class="field has-addons">
+                                                <p class="control is-expanded"><input class="input discount" type="text"
+                                                      name="discount" placeholder="0"></p>
+
+                                                <p class="control"><span class="button is-static">%</span></p>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>Total</td>
+                                          <td class="is-pulled-right total"><span class="sign-st2">$</span> 00.00</td>
+                                       </tr>
+
+                                       <tr>
+                                          <td>Advance</td>
+                                          <td>
+                                             <div class="field has-addons">
+                                                <p class="control"><span class="button is-static sign-st3">₹</span></p>
+                                                <p class="control is-pulled-right is-expanded"><input
+                                                      class="input advance_amount" type="text" name="advance"
+                                                      placeholder="0"></p>
+                                             </div>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="columns has-background-white has-background-lighter_bg">
+                              <div class="column">
+                                 <p class="ext-padd">Additional Notes / Project Description</p>
+                                 <textarea placeholder="Additional Notes" name="project_details" rows="4"
+                                    class="textarea"></textarea>
+                                 <input type="hidden" name="sub_total" class="sub_total_hidden" value="0">
+                                 <input type="hidden" class="total_hidden" name="total" value="0">
+                              </div>
+                           </div>
+                           <div class="columns has-background-white has-background-lighter_bg">
+                              <div class="column">
+                                 <p class="ext-padd">Terms</p>
+                                 <textarea placeholder="Your terms &amp; payment schedule, etc." name="terms" rows="8" class="textarea">
+Payment is due within 15 days
+
+Company Name
+IBAN 12345678
+BIC 12345678
+Bank address 12345678
+Contract #12345678 from 05.31.2024
+                                 </textarea>
+                              </div>
+                           </div>
+
+
+                           <!-- Signature -->
+                           <script src="/assets/js/signature.js"></script>
+                           <div class="columns has-background-white has-background-lighter_bg">
+                              <div class="column">
+                                 <p class="ext-padd">Signature</p>
+                                 <div id="canvas">
+                                    Canvas is not supported.
+                                 </div>
+
+                                 <script>
+                                    zkSignature.capture();
+                                 </script>
+
+                                 <div class="wrapper-button">
+                                    <button class="button is-link is-block is-bold inv_mg_bt_20" type="button" onclick="zkSignature.clear()">
+                                       Clear Signature
+                                    </button>
+                                    <button class="button is-warning is-bold" type="button" onclick="zkSignature.save()">
+                                       Save Signature
+                                    </button>
+                                 </div>
+
+                                 <br />
+                                 <img id="saveSignature" alt="Saved invoice signature png" />
+                              </div>
+                           </div>
+
+                           <!-- settings start -->
+                           <header class="card-header settings_toggle">
+                              <h1 class="card-header-title">
+                                 <!--Additional settings-->
+                                 <span class="tag is-warning">Additional settings</span>
+                              </h1>
+
+                              <!-- This icon toggles additional information -->
+                              <!--<span class="card-header-icon settings_toggle" aria-label="more information">-->
+                              <span class="card-header-icon">
+                                 <span class="icon">
+                                    <i class="fa fa-angle-down invoicemaker_arrow" aria-hidden="true">
+                                       <svg height="512pt" viewBox="0 0 512 512" width="512pt"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="m256 512c-68.378906 0-132.667969-26.628906-181.019531-74.980469-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531s26.628906-132.667969 74.980469-181.019531c48.351562-48.351563 112.640625-74.980469 181.019531-74.980469s132.667969 26.628906 181.019531 74.980469c48.351563 48.351562 74.980469 112.640625 74.980469 181.019531s-26.628906 132.667969-74.980469 181.019531c-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469zm0-472c-119.101562 0-216 96.898438-216 216s96.898438 216 216 216 216-96.898438 216-216-96.898438-216-216-216zm138.285156 182-28.285156-28.285156-110 110-110-110-28.285156 28.285156 138.285156 138.285156zm0 0">
+                                          </path>
+                                       </svg>
+                                    </i>
+                                 </span>
+                              </span>
+                           </header>
+
+                           <div class="card-content" id="show_settings_toggle" style="display: none;">
+                              <div class="content">
+                                 <div class="invoicemaker_main_content1">
+                                    <h2>Settings</h2>
+                                    <div class="columns has-background-white has-background-lighter_bg">
+                                       <div class="column">
+                                          <p class="ext-padd">Element color</p>
+                                          <label for="color_bg">Choose a background color:</label>
+                                          <input type="color" id="color_bg" name="color_bg" value="#ffffff"><br><br>
+
+                                          <!--<label for="color_line">Choose a line color:</label>
+                                          <input type="color" id="color_line" name="color_line" value="#ff0000"><br><br>-->
+
+                                          <label for="color_text">Choose a text color:</label>
+                                          <input type="color" id="color_text" name="color_text" value="#000000"><br><br>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- settings end -->
+
+                           <br>
+
+                           <div class="columns inv_padding_bt_20 has-background-white">
+                              <div class="column is-6">
+                                 <button class="button is-warning has-text-black is-fullwidth">Download As PDF</button>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+
+                     <form name="download_invoice" id="download_invoice" class="download_invoice" target="_blank"
+                        action="/" method="post">
+                        <input type="hidden" name="access_token" id="invoice_base" value="" required="">
+                        <input type="hidden" name="hash" id="invoice_hash" value="" required="">
+                     </form>
+                  </div>
+               </div>
+               <aside class="column is-2 aside hero is-fullheight">
+                  <div>
+                     <div class="compose has-text-centered">
+                        <a class="button is-link is-block is-bold inv_mg_bt_20" href="/">
+                           <span class="compose">Create New</span>
+                        </a>
+                        <a class="button is-warning has-text-black is-block is-bold" href="/docs">
+                           <span class="compose">Read Docs</span>
+                        </a>
+                     </div>
+                     <div class="main">
+                        <div class="inv_padding_bt_20">
+                           <a class="item" href="/invoices">
+                              <span class="icon">
+                                 <i class="fa fa-file-text-o">
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                       viewBox="0 0 512 512">
+                                       <g>
+                                          <g>
+                                             <rect x="86.588" y="472.785" width="331.294" height="37.647"></rect>
+                                          </g>
+                                       </g>
+                                       <g>
+                                          <g>
+                                             <path
+                                                d="M311.843,169.726H195.765c-10.397,0-18.824,8.427-18.824,18.824s8.427,18.824,18.824,18.824h116.078c10.397,0,18.824-8.427,18.824-18.824S322.24,169.726,311.843,169.726z">
+                                             </path>
+                                          </g>
+                                       </g>
+                                       <g>
+                                          <g>
+                                             <path
+                                                d="M399.686,257.569H195.765c-10.397,0-18.824,8.427-18.824,18.824s8.427,18.824,18.824,18.824h203.922c10.397,0,18.823-8.427,18.823-18.824S410.083,257.569,399.686,257.569z">
+                                             </path>
+                                          </g>
+                                       </g>
+                                       <g>
+                                          <g>
+                                             <path
+                                                d="M500.907,3.86c-6.758-3.037-14.657-1.838-20.204,3.062l-52.712,46.632L375.216,6.363c-7.147-6.394-17.951-6.394-25.098,0l-52.706,47.134L244.7,6.363c-7.147-6.394-17.945-6.394-25.092,0l-52.775,47.191L114.121,6.922c-5.54-4.894-13.446-6.093-20.204-3.062c-6.751,3.043-11.093,9.757-11.093,17.161v335.059h-64C8.427,356.079,0,364.506,0,374.903v45.804c0,49.474,40.251,89.725,89.725,89.725v-37.647c-28.718,0-52.078-23.366-52.078-52.078v-26.98h294.902v26.98c0,49.474,40.251,89.726,89.725,89.726c49.474,0,89.725-40.251,89.725-89.725V21.02C512,13.616,507.658,6.903,500.907,3.86z M474.353,420.707c0,28.712-23.366,52.078-52.078,52.078s-52.078-23.366-52.078-52.078v-45.804c0-10.397-8.427-18.824-18.824-18.824H120.471V62.802l33.964,30.049c7.153,6.325,17.907,6.293,25.016-0.069l52.706-47.134l52.706,47.128c7.147,6.394,17.951,6.394,25.098,0l52.712-47.134l52.706,47.134c7.115,6.362,17.87,6.387,25.016,0.069l33.958-30.042V420.707z">
+                                             </path>
+                                          </g>
+                                       </g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                       <g></g>
+                                    </svg>
+                                 </i>
+                              </span>
+                              <span class="name">MY INOICES</span>
+                           </a>
+                           <a class="item " href="/clients">
+                              <span class="icon">
+                                 <i class="fa fa-users">
+                                    <svg id="Capa_1" enable-background="new 0 0 551.132 551.132" height="512"
+                                       viewBox="0 0 551.132 551.132" width="512" xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="m525.97 357.643c-46.33-26.637-99.039-41.794-153.635-45.853 11.183 5.004 22.433 9.894 33.024 15.982 12.314 7.087 22.187 17.315 29.448 29.181 25.95 7.207 50.903 17.275 74.023 30.56 4.844 2.792 7.855 8.393 7.855 14.633v80.093h-68.891v34.446h86.114c9.52 0 17.223-7.703 17.223-17.223v-97.316c.001-18.551-9.653-35.605-25.161-44.503z">
+                                       </path>
+                                       <path
+                                          d="m388.187 357.643c-108.416-62.332-254.608-62.332-363.026 0-15.524 8.931-25.161 25.969-25.161 44.504v97.316c0 9.52 7.703 17.223 17.223 17.223h378.902c9.52 0 17.223-7.703 17.223-17.223v-97.333c0-18.518-9.637-35.556-25.161-44.487zm-9.284 124.597h-344.456v-80.093c0-6.24 3.011-11.841 7.871-14.633 98.022-56.344 230.692-56.344 328.714 0 4.861 2.792 7.871 8.393 7.871 14.616z">
+                                       </path>
+                                       <path
+                                          d="m335.881 69.701c2.857-.299 5.687-.809 8.578-.809 47.481 0 86.114 38.634 86.114 86.114s-38.634 86.114-86.114 86.114c-2.889 0-5.719-.513-8.576-.812-7.308 11.035-16.254 20.732-26.065 29.549 11.216 3.454 22.79 5.708 34.641 5.708 66.469 0 120.56-54.09 120.56-120.56s-54.09-120.56-120.56-120.56c-11.853 0-23.427 2.254-34.643 5.708 9.811 8.819 18.757 18.513 26.065 29.548z">
+                                       </path>
+                                       <path
+                                          d="m206.676 275.566c66.469 0 120.56-54.09 120.56-120.56s-54.09-120.56-120.56-120.56-120.56 54.09-120.56 120.56 54.091 120.56 120.56 120.56zm0-206.674c47.481 0 86.114 38.634 86.114 86.114s-38.634 86.114-86.114 86.114-86.114-38.634-86.114-86.114 38.634-86.114 86.114-86.114z">
+                                       </path>
+                                    </svg>
+                                 </i>
+                              </span>
+                              <span class="name">MY CLIENTS</span>
+                           </a>
+                           <a class="item " href="/templates">
+                              <span class="icon">
+                                 <i class="fa fa-folder-o">
+                                    <svg id="Capa_1" enable-background="new 0 0 510 510" height="512"
+                                       viewBox="0 0 510 510" width="512" xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="m108.649 194.85c-30.425 0-55.177 24.752-55.177 55.177s24.752 55.177 55.177 55.177 55.177-24.752 55.177-55.177-24.752-55.177-55.177-55.177zm0 80.356c-13.883 0-25.179-11.295-25.179-25.179s11.296-25.179 25.179-25.179 25.179 11.295 25.179 25.179-11.296 25.179-25.179 25.179z">
+                                       </path>
+                                       <path
+                                          d="m206.358 325.171c-30.424 0-55.176 24.752-55.176 55.177 0 30.424 24.752 55.176 55.176 55.176 30.425 0 55.177-24.752 55.177-55.176 0-30.425-24.752-55.177-55.177-55.177zm0 80.355c-13.883 0-25.178-11.295-25.178-25.179s11.295-25.179 25.178-25.179c13.884 0 25.179 11.295 25.179 25.179.001 13.884-11.295 25.179-25.179 25.179z">
+                                       </path>
+                                       <path
+                                          d="m496.18 324.693c-.099-.098-.198-.194-.299-.29l-51.938-49.011c29.074-21.984 42.208-60.897 30.264-96.895-56.309-169.883-272.685-223.779-401.614-96.798-96.561 95.102-95.66 248.445-4.044 342.874 82.305 84.831 211.993 96.745 307.711 34.089 44.824-29.332 24.217-99.152-29.421-99.152-40.06 0-46.792-56.011-8.951-65.602l91.503 96.974c.096.101.192.201.291.3 18.343 18.385 48.139 18.434 66.53.042 18.389-18.388 18.389-48.152-.032-66.531zm-193.801 47.105c12.051 11.42 27.84 17.709 44.461 17.709 23.956 0 32.988 30.972 12.993 44.056-83.775 54.84-197.555 44.538-269.754-29.878-80.978-83.463-80.501-217.407 3.896-300.423 113.093-111.242 302.248-64.702 351.759 84.677 8.389 25.283-2.094 52.756-24.082 66.419l-83.314-78.619c5.044-24.218-1.942-49.749-20.246-68.052-22.973-22.974-95.346-34.425-126.711-37.832-9.513-1.036-17.568 7.006-16.533 16.533 3.435 31.487 14.819 103.696 37.833 126.711 18.316 18.314 43.86 25.286 68.059 20.243l35.094 37.192c-37.37 20.287-44.958 71.41-13.455 101.264zm-68.487-179.911c-11.303-11.303-21.402-54.292-26.734-89.723 35.432 5.331 78.421 15.431 89.723 26.734 17.404 17.404 17.407 45.58 0 62.989-17.365 17.367-45.547 17.442-62.989 0zm241.11 178.126c-6.61 6.61-17.308 6.64-23.957.107-7.678-8.137-134.279-142.308-141.333-149.783 5.918-4.395 11.222-9.699 15.623-15.623l149.784 141.343c6.539 6.656 6.503 17.335-.117 23.956z">
+                                       </path>
+                                    </svg>
+                                 </i>
+                              </span>
+                              <span class="name">MY TEMPLATES</span>
+                           </a>
+                           <span class="item disabled">
+                              <span class="icon">
+                                 <i class="fa fa-calendar">
+                                    <svg height="512pt" viewBox="-6 0 512 512" width="512pt"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path
+                                          d="m227.65625 357.507812c2.835938 2.832032 6.679688 4.425782 10.691406 4.425782 4.007813 0 7.851563-1.589844 10.6875-4.425782l53.972656-53.972656c5.90625-5.90625 5.90625-15.476562 0-21.382812-5.902343-5.902344-15.476562-5.902344-21.378906 0l-43.28125 43.28125-19.734375-19.734375c-5.90625-5.902344-15.476562-5.902344-21.382812 0-5.902344 5.902343-5.902344 15.476562 0 21.382812zm0 0">
+                                       </path>
+                                       <path
+                                          d="m250.121094 439.84375c66.175781 0 120.011718-53.839844 120.011718-120.015625s-53.835937-120.011719-120.011718-120.011719c-66.179688 0-120.015625 53.835938-120.015625 120.011719s53.839843 120.015625 120.015625 120.015625zm0-209.792969c49.503906 0 89.777344 40.273438 89.777344 89.777344s-40.273438 89.78125-89.777344 89.78125-89.78125-40.277344-89.78125-89.78125 40.277344-89.777344 89.78125-89.777344zm0 0">
+                                       </path>
+                                       <path
+                                          d="m451.34375 32.191406h-27.574219v-17.074218c0-8.347657-6.769531-15.117188-15.117187-15.117188s-15.117188 6.769531-15.117188 15.117188v17.074218h-29.707031v-17.074218c0-8.347657-6.769531-15.117188-15.121094-15.117188-8.347656 0-15.117187 6.769531-15.117187 15.117188v17.074218h-166.9375v-17.074218c0-8.347657-6.769532-15.117188-15.121094-15.117188-8.347656 0-15.117188 6.769531-15.117188 15.117188v17.074218h-29.707031v-17.074218c0-8.347657-6.769531-15.117188-15.121093-15.117188-8.347657 0-15.117188 6.769531-15.117188 15.117188v17.074218h-27.578125c-26.957031 0-48.890625 21.933594-48.890625 48.894532v382.023437c0 26.957031 21.933594 48.890625 48.890625 48.890625h402.453125c26.960938 0 48.890625-21.933594 48.890625-48.890625v-382.023437c0-26.960938-21.933594-48.894532-48.890625-48.894532zm18.652344 430.917969c0 10.285156-8.367188 18.65625-18.652344 18.65625h-402.453125c-10.285156 0-18.65625-8.371094-18.65625-18.65625v-305.210937h439.761719zm-439.761719-382.023437c0-10.289063 8.371094-18.65625 18.65625-18.65625h27.578125v17.074218c0 8.347656 6.769531 15.117188 15.121094 15.117188 8.347656 0 15.117187-6.769532 15.117187-15.117188v-17.074218h29.707031v17.074218c0 8.347656 6.769532 15.117188 15.121094 15.117188 8.347656 0 15.117188-6.769532 15.117188-15.117188v-17.074218h166.9375v17.074218c0 8.347656 6.769531 15.117188 15.121094 15.117188 8.347656 0 15.117187-6.769532 15.117187-15.117188v-17.074218h29.707031v17.074218c0 8.347656 6.769532 15.117188 15.117188 15.117188 8.351562 0 15.121094-6.769532 15.121094-15.117188v-17.074218h27.570312c10.285156 0 18.65625 8.367187 18.65625 18.65625v46.574218h-439.765625zm0 0">
+                                       </path>
+                                    </svg>
+                                 </i>
+                              </span>
+                              <span class="name">CALENDAR <span class="tag is-warning">Upcoming</span></span>
+                           </span>
+                        </div>
+                        <span class="item disabled">
+                           <span class="icon">
+                              <i class="fa fa-user">
+                                 <svg height="512pt" viewBox="0 0 512 512" width="512pt"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                       d="m512 412c0 11.046875-8.953125 20-20 20h-60v60c0 11.046875-8.953125 20-20 20s-20-8.953125-20-20v-60h-60c-11.046875 0-20-8.953125-20-20s8.953125-20 20-20h60v-60c0-11.046875 8.953125-20 20-20s20 8.953125 20 20v60h60c11.046875 0 20 8.953125 20 20zm-160 80c0 11.046875-8.953125 20-20 20h-272c-33.085938 0-60-26.914062-60-60v-37c0-34.515625 14.804688-67.3125 40.613281-89.988281 20.894531-18.363281 60.910157-45.578125 125.238281-59.722657-35.15625-27.082031-57.851562-69.582031-57.851562-117.289062 0-81.605469 66.394531-148 148-148s148 66.394531 148 148-66.394531 148-148 148c-109.902344 0-168.777344 41.300781-188.984375 59.058594-17.167969 15.085937-27.015625 36.929687-27.015625 59.941406v37c0 11.027344 8.972656 20 20 20h272c11.046875 0 20 8.953125 20 20zm-96-236c59.550781 0 108-48.449219 108-108s-48.449219-108-108-108-108 48.449219-108 108 48.449219 108 108 108zm0 0">
+                                    </path>
+                                 </svg>
+                              </i>
+                           </span>
+                           <span class="name">REGISTER <span class="tag is-warning">Upcoming</span></span>
+                        </span>
+                        <span class="item disabled">
+                           <span class="icon">
+                              <i class="fa fa-sign-in">
+                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    viewBox="0 0 512 512">
+                                    <g>
+                                       <g>
+                                          <g>
+                                             <path
+                                                d="M131.5,472H60.693c-8.538,0-13.689-4.765-15.999-7.606c-3.988-4.906-5.533-11.29-4.236-17.519c20.769-99.761,108.809-172.616,210.445-174.98c1.693,0.063,3.39,0.105,5.097,0.105c1.722,0,3.434-0.043,5.142-0.107c24.853,0.567,49.129,5.24,72.236,13.917c10.34,3.885,21.871-1.352,25.754-11.693c3.883-10.34-1.352-21.871-11.693-25.754c-3.311-1.244-6.645-2.408-9.995-3.512C370.545,220.021,392,180.469,392,136C392,61.01,330.991,0,256,0c-74.991,0-136,61.01-136,136c0,44.509,21.492,84.092,54.643,108.918c-30.371,9.998-58.871,25.546-83.813,46.062c-45.732,37.617-77.529,90.086-89.532,147.743c-3.762,18.066,0.744,36.622,12.363,50.908C25.221,503.847,42.364,512,60.693,512H131.5c11.046,0,20-8.954,20-20C151.5,480.954,142.546,472,131.5,472z M160,136c0-52.935,43.065-96,96-96s96,43.065,96,96c0,51.367-40.554,93.438-91.326,95.885c-1.557-0.028-3.114-0.052-4.674-0.052c-1.564,0-3.127,0.023-4.689,0.051C200.546,229.43,160,187.362,160,136z">
+                                             </path>
+                                             <path
+                                                d="M496.689,344.607c-8.561-19.15-27.845-31.558-49.176-31.607h-62.372c-0.045,0-0.087,0-0.133,0c-22.5,0-42.13,13.26-50.029,33.807c-1.051,2.734-2.336,6.178-3.677,10.193H200.356c-5.407,0-10.583,2.189-14.35,6.068l-34.356,35.388c-7.567,7.794-7.529,20.203,0.085,27.95l35,35.612c3.76,3.826,8.9,5.981,14.264,5.981h65c11.046,0,20-8.954,20-20c0-11.046-8.954-20-20-20h-56.614l-15.428-15.698L208.814,397h137.491c9.214,0,17.235-6.295,19.426-15.244c1.618-6.607,3.648-12.959,6.584-20.596c1.936-5.036,6.798-8.16,12.741-8.16c0.013,0,0.026,0,0.039,0h62.371c5.656,0.013,10.524,3.053,12.705,7.932c5.369,12.012,11.78,30.608,11.828,50.986c0.048,20.529-6.356,39.551-11.739,51.894c-2.17,4.978-7.079,8.188-12.56,8.188c-0.011,0-0.022,0-0.033,0h-63.125c-5.533-0.013-10.716-3.573-12.896-8.858c-2.339-5.671-4.366-12.146-6.197-19.797c-2.571-10.742-13.367-17.366-24.105-14.796c-10.743,2.571-17.367,13.364-14.796,24.106c2.321,9.699,4.978,18.118,8.121,25.738c8.399,20.364,27.939,33.555,49.827,33.606h63.125c0.043,0,0.083,0,0.126,0c21.351-0.001,40.647-12.63,49.18-32.201c6.912-15.851,15.137-40.511,15.072-67.975C511.935,384.434,503.638,360.153,496.689,344.607z">
+                                             </path>
+                                             <circle cx="431" cy="412" r="20"></circle>
+                                          </g>
+                                       </g>
+                                    </g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                    <g></g>
+                                 </svg>
+                              </i>
+                           </span>
+                           <span class="name">LOGIN <span class="tag is-warning">Upcoming</span></span>
+                        </span>
+                     </div>
+                  </div>
+               </aside>
+            </div>
+         </div>
+      </section>
+   </div>
+
+   <script async="" src="/assets/js/js.js"></script>
+   <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+   </script>
+
+   <footer class="InvoiceMakerFoot footer has-shadow">
+      <div class="container">
+         <div class="content has-text-centered">
+            <p>
+               <strong>@2020 Free Online Invoice Maker</strong> by <a href="https://apartner.pro/"
+                  target="_blank">APARTNER.PRO</a> &amp; Download <a target="_blank"
+                  href="https://web.archive.org/web/20231205192708/https://play.google.com/store/apps/details?id=com.shivaaz.billing">Invoice
+                  Maker App on Play Store</a>.
+            </p>
+         </div>
+      </div>
+   </footer>
+
+   <div class="donation-wrapper">
+      <div class="donation">
+         <h2>Thank You for Using Our Service!</h2>
+         <p>We appreciate your trust in our free invoice building service. We hope it has been helpful for your invoicing needs.</p>
+
+         <h2>Support Our Service</h2>
+         <p>If you find our service valuable, please consider making a voluntary donation to support its development and maintenance. Your contribution, starting from just $1, will help us continue providing this service for free.</p>
+
+         <!--<form action="https://www.example.com/donate" method="post">
+            <label for="donationAmount">Enter Donation Amount:</label>
+            <input type="number" id="donationAmount" name="donationAmount" min="1" step="any" required>
+            <button type="submit">Donate</button>
+         </!--form>-->
+
+         <p>Thank you for your generosity!</p>
+
+         <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="apartner.pro" data-color="#5F7FFF" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
+         <!-- Close button for the modal -->
+         <button id="closeDonationModal">x</button>
+
+      </div>
+   </div>
+
+   <div class="wait_loader">
+      <div class="waitpos">
+         <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+   </div>
+
+   <script src="/assets/js/manup.min.js"></script>
+
+   <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="apartner.pro" data-description="Support me on Buy me a coffee!" data-message="Thank You for Using Our Service!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+
+</html>
