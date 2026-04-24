@@ -1,9 +1,9 @@
 {
     "name": "Free Invoice Maker Tool",
-    "short_name": "MakerInvoice.Com",
+    "short_name": "invoicemaker.me",
     "description": "Create free awesome, and professional invoices using this tool, In just one click of invoice generator button you can get it and send to your customers easily.",
     "lang": "en-US",
-    "start_url": "https://makerinvoice.com/",
+    "start_url": "https://invoicemaker.me/",
     "Scope": "/",
     "display": "standalone",
     "orientation": "portrait-primary",
@@ -59,6 +59,6 @@
         }
     ],
     "splash_pages": null,
-    "url": "https://makerinvoice.com",
+    "url": "https://invoicemaker.me",
     "screenshots": []
 }

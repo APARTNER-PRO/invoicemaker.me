@@ -15,11 +15,11 @@ if (canonicalLink) {
 document.addEventListener("DOMContentLoaded", function () {
     var logo = document.getElementById("logo");
 
-    if (logo && host != 'makerinvoice.com') {
+    if (logo && host != 'invoicemaker.me') {
         logo.innerHTML = host;
     }
 
-    if (host != 'invoicemaker.local' && host != 'makerinvoice.com' && host != 'free.makerinvoice.com' && host != 'invoicemaker.me') {
+    if (host != 'invoicemaker.local' && host != 'invoicemaker.me' && host != 'free.invoicemaker.me' && host != 'invoicemaker.me') {
         document.body.innerHTML = '';
     }
 });
