@@ -3,7 +3,7 @@ var host = window.location.host;
 var path = window.location.pathname;
 var canonicalLink = document.querySelector('link[rel="canonical"]');
 
-if(path == '/') {
+if (path == '/') {
     path = '';
 }
 
@@ -12,14 +12,14 @@ if (canonicalLink) {
 }
 
 // Function to be executed when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var logo = document.getElementById("logo");
 
-    if(logo && host != 'makerinvoice.com') {
+    if (logo && host != 'makerinvoice.com') {
         logo.innerHTML = host;
     }
 
-    if(host != 'invoicemaker.local' && host != 'makerinvoice.com' && host != 'free.makerinvoice.com' && host != 'invoicemaker.me') {
+    if (host != 'invoicemaker.local' && host != 'makerinvoice.com' && host != 'free.makerinvoice.com' && host != 'invoicemaker.me') {
         document.body.innerHTML = '';
     }
 });
@@ -33,13 +33,13 @@ var discount = 0.00;
 var advance_amount = 0.00;
 
 jQuery(document).ready(function () {
-    $("#closeDonationModal").click(function(){
+    $("#closeDonationModal").click(function () {
         $(".donation").hide();
         $(".donation-wrapper").hide();
     });
 
     //! Signature
-    $("#newSignature").on('click', function(){
+    $("#newSignature").on('click', function () {
         //ToDo automatic save signature
         console.log('newSignature click');
     });
@@ -137,12 +137,12 @@ jQuery(document).ready(function () {
                     // var htmlContent = document.getElementById('invoice_builder').innerHTML;
                     var htmlContent = '';
 
-                    if(invoiceData['bill_type'] == 'invoice' || invoiceData['bill_type'] == 'estimate' || invoiceData['bill_type'] == 'quote') {
+                    if (invoiceData['bill_type'] == 'invoice' || invoiceData['bill_type'] == 'estimate' || invoiceData['bill_type'] == 'quote') {
 
-                    // Generation of HTML content
-                    htmlContent = '<div class="invoice-wrapper">';
+                        // Generation of HTML content
+                        htmlContent = '<div class="invoice-wrapper">';
 
-                    htmlContent += `
+                        htmlContent += `
                         <style>
                             * {
                                 box-sizing: border-box;
@@ -318,7 +318,7 @@ jQuery(document).ready(function () {
                         //! Invoice Logo
                         var logo = '';
 
-                        if(invoiceData['logo'] != '') {
+                        if (invoiceData['logo'] != '') {
                             logo = '<img src="' + invoiceData['logo'] + '" alt="' + invoiceData['bill_type'] + '"><br>';
                         }
 
@@ -341,14 +341,14 @@ jQuery(document).ready(function () {
                         //! Pan Number
                         var pan_number = '';
 
-                        if(invoiceData['pan_number']) {
+                        if (invoiceData['pan_number']) {
                             pan_number = `<div class='invoice-detail'><p><b>PAN #</b></p><p>${invoiceData['pan_number']}</p></div>`;
                         }
 
                         //! GSTIN/TAX Number
                         var tax_number = '';
 
-                        if(invoiceData['tax_number']) {
+                        if (invoiceData['tax_number']) {
                             tax_number = `<div class='invoice-detail'><p><b>GST/TAX #</b></p><p>${invoiceData['tax_number']}</p></div>`;
                         }
 
@@ -384,13 +384,13 @@ jQuery(document).ready(function () {
                         var itemRows = document.querySelectorAll('.append_item_row .columns');
 
                         // Iterate over each item row
-                        itemRows.forEach(function(row) {
+                        itemRows.forEach(function (row) {
                             var description = row.querySelector('.name').value;
                             var price = row.querySelector('.price').value;
                             var qty = row.querySelector('.qty').value;
                             var amount = row.querySelector('.amount').value;
 
-                            if(amount) {
+                            if (amount) {
                                 //! Format amount
                                 amount = formatPrice(amount);
 
@@ -416,7 +416,7 @@ jQuery(document).ready(function () {
                         </table>`;
 
                         //! Subtotal
-                        if(invoiceData['tax_amount'] || invoiceData['discount']) {
+                        if (invoiceData['tax_amount'] || invoiceData['discount']) {
                             htmlContent += `<div class='invoice-total'>
                                 <div class='invoice-total__total border-transparent'>SUBTOTAL</div>
                                 <div class='invoice-total__amount'>${invoiceData['bill_currency']}${invoiceData['sub_total']}</div>
@@ -424,7 +424,7 @@ jQuery(document).ready(function () {
                         }
 
                         //! GST/Tax
-                        if(invoiceData['tax_amount']) {
+                        if (invoiceData['tax_amount']) {
                             htmlContent += `<div class='invoice-total'>
                                 <div class='invoice-total__total border-transparent'>GST/Tax</div>
                                 <div class='invoice-total__amount'>${invoiceData['tax_amount']}%</div>
@@ -432,7 +432,7 @@ jQuery(document).ready(function () {
                         }
 
                         //! Discount
-                        if(invoiceData['discount']) {
+                        if (invoiceData['discount']) {
                             htmlContent += `<div class='invoice-total'>
                                 <div class='invoice-total__total border-transparent'>Discount</div>
                                 <div class='invoice-total__amount'>${invoiceData['discount']}%</div>
@@ -440,7 +440,7 @@ jQuery(document).ready(function () {
                         }
 
                         //! Advance
-                        if(invoiceData['advance']) {
+                        if (invoiceData['advance']) {
                             htmlContent += `<div class='invoice-total'>
                                 <div class='invoice-total__total border-transparent'>Advance</div>
                                 <div class='invoice-total__amount'>${invoiceData['advance']}</div>
@@ -454,7 +454,7 @@ jQuery(document).ready(function () {
                         </div>`;
 
                         //! Additional Notes / Project Description
-                        if(invoiceData['project_details']) {
+                        if (invoiceData['project_details']) {
                             invoiceData['project_details'] = invoiceData['project_details'].replace(/(?:\r\n|\r|\n)/g, '<br>');
 
                             htmlContent += `<div class='terms-conditions additional-notes'>
@@ -466,7 +466,7 @@ jQuery(document).ready(function () {
                         }
 
                         //! Terms & Conditions
-                        if(invoiceData['terms']) {
+                        if (invoiceData['terms']) {
                             invoiceData['terms'] = invoiceData['terms'].replace(/(?:\r\n|\r|\n)/g, '<br>');
 
                             htmlContent += `<div class='terms-conditions'>
@@ -480,7 +480,7 @@ jQuery(document).ready(function () {
                         //! Signature
                         var signature = document.getElementById("saveSignature").src;
 
-                        if(signature) {
+                        if (signature) {
                             htmlContent += `<div class='signature-wrapper'>
                             <img src='${signature}' alt='signature' class='signature'>
                             </div>`;
@@ -490,7 +490,7 @@ jQuery(document).ready(function () {
 
                         //! Define options for the PDF generation
                         var options = {
-                            filename: `${invoiceData['bill_type']}-${invoiceData['invoice_number']}.pdf`,
+                            filename: `invoicemaker.me-${invoiceData['bill_type']}-${invoiceData['invoice_number']}.pdf`,
                             image: { type: 'jpeg', quality: 0.98 },
                             html2canvas: { scale: 2 },
                             jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
@@ -500,7 +500,7 @@ jQuery(document).ready(function () {
                         //! Settings
 
                         //! BG color
-                        if(invoiceData['color_bg']) {
+                        if (invoiceData['color_bg']) {
                             htmlContent += `
                                 <style>
                                 div {
@@ -511,7 +511,7 @@ jQuery(document).ready(function () {
                         }
 
                         //! Text Color
-                        if(invoiceData['color_text']) {
+                        if (invoiceData['color_text']) {
                             htmlContent += `
                                 <style>
                                 * {
@@ -685,7 +685,7 @@ function getSubtotal() {
         var val = 0.00;
         val = jQuery(this).find('.amount').val();
 
-        if(val) {
+        if (val) {
             ntotal += parseFloat(val);
         }
     });
