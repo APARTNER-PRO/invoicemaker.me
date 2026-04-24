@@ -118,7 +118,8 @@ jQuery(document).ready(function () {
         submitHandler: function () {
             jQuery('.wait_loader').fadeIn();
             var serializedData = jQuery('#invoice_builder').serialize();
-            var builderUrl = site_url + 'packme/';
+            // var builderUrl = site_url + 'packme/';
+            var builderUrl = '/api/packme';
             jQuery.ajax({
                 url: builderUrl,
                 type: 'POST',
