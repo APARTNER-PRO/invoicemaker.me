@@ -29,7 +29,7 @@ RewriteRule ^(.*)$ $1.html [L]
 # Redirect to index.html if the requested file doesn't exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ / [L,R=301]
+# RewriteRule ^ / [L,R=301]
 
 
 AddCharset UTF-8 .html
