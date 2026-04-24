@@ -1,4 +1,8 @@
 {
+  "name": "invoicemaker-me",
+  "version": "1.0.0",
+  "description": "Invoice Maker Tool",
+  "main": "index.html",
   "dependencies": {
     "pdfkit": "^0.15.0"
   }

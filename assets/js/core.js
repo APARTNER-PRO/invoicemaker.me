@@ -119,10 +119,11 @@ jQuery(document).ready(function () {
             jQuery('.wait_loader').fadeIn();
             var serializedData = jQuery('#invoice_builder').serialize();
             // var builderUrl = site_url + 'packme/';
-            var builderUrl = '/api/packme';
+            var builderUrl = site_url + 'api/packme';
             jQuery.ajax({
                 url: builderUrl,
                 type: 'POST',
+                dataType: 'json',
                 data: {
                     action: 'pack',
                     data: serializedData
