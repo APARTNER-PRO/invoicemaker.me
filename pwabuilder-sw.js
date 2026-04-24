@@ -1,12 +1,15 @@
 // pwabuilder-sw.js
 
 // Define a unique cache name
-const CACHE_NAME = 'makerinvoice-cache-v1';
+const CACHE_NAME = 'makerinvoice-cache-v2';
 
 // List of files to cache
 const urlsToCache = [
   '/',
   '/index.html',
+  '/terms.html',
+  '/privacy.html',
+  '/refund.html',
   '/templates/index.html',
   '/invoices/index.html',
   '/invoices/',
