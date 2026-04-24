@@ -508,10 +508,6 @@ body {
   display: block;
 }
 
-.hero.is-fullheight {
-  padding-right: 0;
-}
-
 .aside .main .item:active,
 .aside .main .item:hover,
 .aside .main .item.active {
