@@ -4,6 +4,10 @@
   overflow: hidden;
 }
 
+aside.hero div {
+  position: fixed;
+}
+
 .navbar-brand a.navbar-item
   {
     font-size:18px;
