@@ -4,10 +4,6 @@
   overflow: hidden;
 }
 
-aside.hero div {
-  position: fixed;
-}
-
 .navbar-brand a.navbar-item {
   font-size: 18px;
 }
@@ -202,6 +198,7 @@ body {
 .aside {
   display: block;
   background-color: #fff;
+  position: fixed;
 }
 
 .messages {
@@ -468,6 +465,7 @@ body {
 #message-feed {
   background: #f3f5f8;
   padding: 20px 20px 30px;
+  margin-left: auto;
 }
 
 .container #mail-app .inv_mg_top_10 {
@@ -533,10 +531,6 @@ body {
   top: 5px;
   right: 0;
   padding: 0;
-}
-
-#mail-app {
-  flex-direction: row-reverse;
 }
 
 .file.is-boxed .file-icon {
